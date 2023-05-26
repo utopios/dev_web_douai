@@ -79,5 +79,16 @@ if (compte > 0 )
 */
 
 console.log(1 == 1); // vrai
-console.log(1 === '1'); // Faux
-console.log(1 == '1');// vrai
+console.log("1" == 1); // vrai
+console.log(1 === 1); // vrai
+console.log("1" === 1); // faux
+console.log("1" != 1); // faux
+console.log(3 !== 3); // faux
+console.log(4 !== 3); // vrai
+
+
+
+/*
+    SWITCH CASE
+
+*/
