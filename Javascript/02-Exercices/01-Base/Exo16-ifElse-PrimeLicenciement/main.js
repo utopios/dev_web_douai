@@ -6,7 +6,7 @@
 const result = document.querySelector('.result');
 
 // Déclaration des variables 
-let indemnite,
+let indemnite = 0,
     salaire,
     anciennete,
     age
@@ -17,19 +17,19 @@ anciennete = Number(prompt("Veuillez saisir l'ancienneté :"))
 age = Number(prompt("Veuillez saisir l'age du salarié' :"))
 
 if (anciennete >= 1 && anciennete <= 10) {
-    indemnite = anciennete * salaire/2
+    indemnite += anciennete * salaire/2
 }
 
 if (anciennete > 10) {
-    indemnite = 10 * salaire /2
-    indemnite = (anciennete - 10) * salaire
+    indemnite += 10 * salaire /2
+    indemnite += (anciennete - 10) * salaire
 }
 
 if (anciennete >= 1 && age > 45) {
     if (age < 50 ) {
-        indemnite = indemnite + 2 * salaire
+        indemnite += 2 * salaire
     } else {
-        indemnite = indemnite + 5 * salaire
+        indemnite +=  5 * salaire
     }
 }
 
