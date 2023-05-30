@@ -122,7 +122,7 @@ switch (civilite) {
         break
 }
 
-let age = 3;
+let age = 7;
 let resultat = "";
 
 switch(true) {
@@ -140,3 +140,4 @@ switch(true) {
         break;
 }
 
+console.log(resultat);
