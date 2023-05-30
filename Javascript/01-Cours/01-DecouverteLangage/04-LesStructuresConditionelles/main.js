@@ -87,8 +87,56 @@ console.log(3 !== 3); // faux
 console.log(4 !== 3); // vrai
 
 
-
 /*
     SWITCH CASE
 
+    switch(condition) {
+        case valeur1 : 
+            // Instruction
+            break;
+        case valeur2 : 
+            // Instruction
+            break;
+        case valeur3 : 
+            // Instruction
+            break;
+        default : 
+            // Instruction
+            break;
+    }
 */
+
+console.log("-------------------- Switch ------------------");
+
+let civilite = "Mr"
+
+switch (civilite) {
+    case "Mr":
+        console.log("Bonjour Monsieur");
+        break;
+    case "Mme" :
+        console.log("Bonjour Madame");
+        break;
+    default :
+        console.log("Bonjour à vous !");
+        break
+}
+
+let age = 3;
+let resultat = "";
+
+switch(true) {
+    case age <= 6:
+        resultat = 'Votre enfant est dans la catégorie "Baby"'
+        break;
+    case age <= 8 :
+        resultat = 'Votre enfant est dans la catégorie "Poussin"'
+        break;
+    case age <= 10 :
+        resultat = 'Votre enfant est dans la catégorie "Pupille"'
+        break;
+    default:
+        resultat = `Votre enfant est dans la catégorie "Cadet"`;
+        break;
+}
+
