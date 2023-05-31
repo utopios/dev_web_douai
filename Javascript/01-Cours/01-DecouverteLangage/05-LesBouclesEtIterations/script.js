@@ -76,3 +76,10 @@ for(let a = 1; a < 5; a++) {
         console.log("b = " + b);
     }
 }
+
+// La boucle For of
+let names = ["Adam", "Etienne", "Sebastien", "Clement", "Virginie"]
+
+for(let name of names){
+    console.log(`La boucle for... of, names contient ${name} `);
+}
