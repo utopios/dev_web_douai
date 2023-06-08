@@ -24,4 +24,5 @@ function findCar() {
 
 function init(){
     // Ajouter des véhicules à la liste
+    new Vehicule('AA-123-AA', new Date("2023-06-08T14:00:00"))
 }
