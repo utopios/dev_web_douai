@@ -1,4 +1,5 @@
 import React, { useState, useRef } from 'react';
+import Counter from '../Counter/Counter';
 
 
 const MainComponent = () => {
@@ -9,6 +10,11 @@ const MainComponent = () => {
         e.preventDefault()
 
         setStartValues(prev => [...prev, +counterStartInputRef.current.value])
+    }
+    
+    const handleCounterDelete = (counterId) => {
+        const tempArray = [...startValues.slice(0, counterId), ...startValues.slice(counterId + 1)]
+        setStartValues(tempArray)
     }
 
     return (  
@@ -28,10 +34,9 @@ const MainComponent = () => {
                     <div>
                         <h3>Counters</h3>
                         <hr />
-
-
-
-
+                        {startValues.length === 0 && <p>Merci d'ajouter un compteur</p>}
+                        {startValues.length > 0 && startValues.map((v,i) => <Counter startValue={v} key={i} 
+                        deleteCounter={() => handleCounterDelete(i)} />)}
                     </div>
                 </div>
             </div>
