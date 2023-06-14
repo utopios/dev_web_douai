@@ -7,7 +7,7 @@ const Counter = (props) => {
         let timer = setInterval(() => {
             setCurrentValue(currentValue + 1)
         }, 1000)
-
+        
         return () => {
             if(timer) {
                 clearInterval(timer)
