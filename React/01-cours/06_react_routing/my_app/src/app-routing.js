@@ -5,6 +5,7 @@ import HomePage from "./Components/HomePage/HomePage"
 import ContactMePage from "./Components/ContactMePage/ContactMePage"
 import AboutPage from "./Components/AboutPage/AboutPage"
 import ProjectPage from "./Components/ProjectPage/ProjectPage"
+import ProjectDetail from './Components/ProjectDetail/ProjectDetail'
 
 const router = createBrowserRouter([
     {
@@ -25,8 +26,12 @@ const router = createBrowserRouter([
                 element: <AboutPage />
             },
             {
-                path: "/projects",
+                path: "/projects", // localhost:3000/projects
                 element: <ProjectPage />
+            },
+            {
+                path: "/projects/:id", // localhost:3000/projects/2
+                element: <ProjectDetail />
             }
         ]
     }
