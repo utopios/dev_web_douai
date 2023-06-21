@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 const ProjectDetail = () => {
     const id = useParams()
 
+
     console.log(id);
 
     return ( 
